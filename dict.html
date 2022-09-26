@@ -133,7 +133,7 @@
 	//用户登出
 	function logout(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/logout',
+			url:'http://www.wayne-lee.cn:2119/user/logout',
 			type:'get',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
@@ -429,7 +429,7 @@
 			location.href = 'index.html';
 		}
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/getWithWord',
+			url:'http://www.wayne-lee.cn:2119/bill/getWithWord',
 			type:'GET',
 			data:{
 				bId:bId
@@ -460,7 +460,7 @@
 	})
 	$('.option-logout').click(function(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/logout',
+			url:'http://www.wayne-lee.cn:2119/user/logout',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
 			},
@@ -538,7 +538,7 @@
 		
 		//词典访问权限
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/checkPublic',
+			url:'http://www.wayne-lee.cn:2119/bill/checkPublic',
 			type:'GET',
 			data:{
 				bId:document.location.href.split('?')[1].split('=')[1]
@@ -568,7 +568,7 @@
 		
 		//校验用户登录情况
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/loginInfo',
+			url:'http://www.wayne-lee.cn:2119/user/loginInfo',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
 			},

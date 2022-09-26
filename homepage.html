@@ -81,7 +81,7 @@
 		let name = $('.create-form-name').val();
 		let introduction = $('.create-form-introduction').val();
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/add',
+			url:'http://www.wayne-lee.cn:2119/bill/add',
 			type:'GET',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
@@ -114,7 +114,7 @@
 			document.location.href = 'index.html';
 		}else{
 			$.ajax({
-				url:'http://60.205.211.19:2119/user/loginInfo',
+				url:'http://www.wayne-lee.cn:2119/user/loginInfo',
 				type:'get',
 				headers:{
 					Authorization:sessionStorage.getItem('token')
@@ -135,7 +135,7 @@
 	
 	function getBillList(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/getListByUser',
+			url:'http://www.wayne-lee.cn:2119/bill/getListByUser',
 			type:'get',
 			headers:{
 				Authorization:sessionStorage.getItem('token')

@@ -196,7 +196,7 @@
 			
 			//获取用户信息
 			$.ajax({
-				url:'http://60.205.211.19:2119/user/loginInfo',
+				url:'http://www.wayne-lee.cn:2119/user/loginInfo',
 				type:'get',
 				headers:{
 					Authorization:sessionStorage.getItem('token')
@@ -223,7 +223,7 @@
 	//用户登出
 	function logout(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/logout',
+			url:'http://www.wayne-lee.cn:2119/user/logout',
 			type:'get',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
@@ -249,7 +249,7 @@
 		let password = $('.form-login-password').val();
 		
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/login',
+			url:'http://www.wayne-lee.cn:2119/user/login',
 			type:'post',
 			data:{
 				phone:phone,
@@ -287,7 +287,7 @@
 		}
 		
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/register',
+			url:'http://www.wayne-lee.cn:2119/user/register',
 			type:'post',
 			data:{
 				nickname:nickname,
@@ -322,7 +322,7 @@
 		
 		
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/getList',
+			url:'http://www.wayne-lee.cn:2119/bill/getList',
 			type:'GET',
 			async:false,
 			data:{

@@ -148,7 +148,7 @@
 			return;
 		}
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/delete',
+			url:'http://www.wayne-lee.cn:2119/bill/delete',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
 			},
@@ -182,7 +182,7 @@
 	//处理登出事件
 	$('.option-logout').click(function(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/logout',
+			url:'http://www.wayne-lee.cn:2119/user/logout',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
 			},
@@ -207,7 +207,7 @@
 	//处理词典信息修改事件
 	$('.book-info-submit>button').click(function(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/update',
+			url:'http://www.wayne-lee.cn:2119/bill/update',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
 			},
@@ -320,7 +320,7 @@
 	//公开词典提交事件
 	$('.submit-public').click(function(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/publicBill',
+			url:'http://www.wayne-lee.cn:2119/bill/publicBill',
 			type:'GET',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
@@ -346,7 +346,7 @@
 	//撤回词典提交事件
 	$('.submit-private').click(function(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/publicBill',
+			url:'http://www.wayne-lee.cn:2119/bill/publicBill',
 			type:'GET',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
@@ -419,7 +419,7 @@
 		$('.result').slideDown(300);
 		var that = this;
 		$.ajax({
-			url:'http://60.205.211.19:2119/dict/searchByPrefix',
+			url:'http://www.wayne-lee.cn:2119/dict/searchByPrefix',
 			type:'GET',
 			data:{
 				eng:$(this).val()
@@ -459,7 +459,7 @@
 		$('.result').slideDown(300);
 		var that = this;
 		$.ajax({
-			url:'http://60.205.211.19:2119/dict/searchByCn',
+			url:'http://www.wayne-lee.cn:2119/dict/searchByCn',
 			type:'GET',
 			data:{
 				cn:$(this).val()
@@ -540,7 +540,7 @@
 		console.log('当前页面单词集id为:' + bId);
 		
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/getWithWord',
+			url:'http://www.wayne-lee.cn:2119/bill/getWithWord',
 			type:'GET',
 			data:{
 				bId:bId
@@ -616,7 +616,7 @@
 		}
 		
 		$.ajax({
-			url:'http://60.205.211.19:2119/word/add',
+			url:'http://www.wayne-lee.cn:2119/word/add',
 			type:'POST',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
@@ -648,7 +648,7 @@
 	    // console.log(e.target.id);
 	    // $("#sheet"+e.target.id).hide();
 		$.ajax({
-			url:'http://60.205.211.19:2119/word/delete',
+			url:'http://www.wayne-lee.cn:2119/word/delete',
 			type:'GET',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
@@ -681,7 +681,7 @@
 		
 		//校验访问权限
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/checkUserBill',
+			url:'http://www.wayne-lee.cn:2119/bill/checkUserBill',
 			type:'GET',
 			data:{
 				bId:document.location.href.split('?')[1].split('=')[1]
@@ -703,7 +703,7 @@
 		
 		//校验用户信息
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/loginInfo',
+			url:'http://www.wayne-lee.cn:2119/user/loginInfo',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
 			},

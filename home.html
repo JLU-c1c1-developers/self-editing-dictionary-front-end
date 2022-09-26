@@ -206,7 +206,7 @@
 	//用户登出
 	function logout(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/logout',
+			url:'http://www.wayne-lee.cn:2119/user/logout',
 			type:'get',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
@@ -235,7 +235,7 @@
 		let introduction = $('.book2-self-introduction').val();
 		
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/add',
+			url:'http://www.wayne-lee.cn:2119/bill/add',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
 			},
@@ -307,7 +307,7 @@
 		
 		//校验用户信息
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/loginInfo',
+			url:'http://www.wayne-lee.cn:2119/user/loginInfo',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
 			},
@@ -333,7 +333,7 @@
 		
 		//获取用户词典
 		$.ajax({
-			url:'http://60.205.211.19:2119/bill/getListByUser',
+			url:'http://www.wayne-lee.cn:2119/bill/getListByUser',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
 			},
@@ -445,7 +445,7 @@
 		
 		
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/update',
+			url:'http://www.wayne-lee.cn:2119/user/update',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
 			},

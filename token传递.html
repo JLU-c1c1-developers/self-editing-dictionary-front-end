@@ -23,7 +23,7 @@
 	
 	$('#profile').click(function(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/profile',
+			url:'http://www.wayne-lee.cn:2119/user/profile',
 			type:'GET',
 			data:{
 				nickname:$('#nickname').val(),
@@ -47,7 +47,7 @@
 	
 	$('#login-info').click(function(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/loginInfo',
+			url:'http://www.wayne-lee.cn:2119/user/loginInfo',
 			type:'GET',
 			xhrFields:{
 				withCredentials:true
@@ -67,7 +67,7 @@
 	
 	$('#search').click(function(){
 		$.ajax({
-			url:'http://60.205.211.19:2119/subject/search',
+			url:'http://www.wayne-lee.cn:2119/subject/search',
 			data:{
 				title:$('#title').val()
 			},
@@ -88,7 +88,7 @@
 	$('#register').click(()=>{
 		// alert($('#phone').val());
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/register',
+			url:'http://www.wayne-lee.cn:2119/user/register',
 			type:'post',
 			data:{
 				phone:$('#phone').val(),
@@ -107,7 +107,7 @@
 	
 	$('#login').click(()=>{
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/login',
+			url:'http://www.wayne-lee.cn:2119/user/login',
 			data:{
 				phone:$('#phone').val(),
 				password:$('#password').val()
@@ -133,7 +133,7 @@
 	
 	$('#logout').click(()=>{
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/logout',
+			url:'http://www.wayne-lee.cn:2119/user/logout',
 			xhrFields:{
 				withCredentials:true
 			},
@@ -149,7 +149,7 @@
 	
 	$('#login-status').click(()=>{
 		$.ajax({
-			url:'http://60.205.211.19:2119/user/loginStatus',
+			url:'http://www.wayne-lee.cn:2119/user/loginStatus',
 			type:'GET',
 			headers:{
 				Authorization:sessionStorage.getItem('token')
